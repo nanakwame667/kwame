@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Rethink_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
-const sans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
+const sans = Rethink_Sans({
+  variable: "--font-sans",
 });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${sans.variable} antialiased`}>
+      <body className={` ${sans.variable} antialiased flex w-full`}>
         <Header />
         {children}
       </body>
