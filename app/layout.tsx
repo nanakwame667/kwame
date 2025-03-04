@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${sans.variable} antialiased flex w-full`}>
+      <body className={` ${sans.variable} antialiased flex w-full `}>
         <Header />
         {children}
       </body>
